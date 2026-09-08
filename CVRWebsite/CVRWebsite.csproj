@@ -1,0 +1,369 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4DD8FAF6-3A4F-4258-86E4-34C747E3CAD0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CVRWebsite</RootNamespace>
+    <AssemblyName>CVRWebsite</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44341</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="aboutcvr.aspx" />
+    <Content Include="academiccalander.aspx" />
+    <Content Include="address.aspx" />
+    <Content Include="campus.aspx" />
+    <Content Include="civil.aspx" />
+    <Content Include="clubs.aspx" />
+    <Content Include="cse.aspx" />
+    <Content Include="cseaiml.aspx" />
+    <Content Include="CSS\style.css" />
+    <Content Include="directions.aspx" />
+    <Content Include="ece.aspx" />
+    <Content Include="eee.aspx" />
+    <Content Include="examinationbranch.aspx" />
+    <Content Include="governingbody.aspx" />
+    <Content Include="home.aspx" />
+    <Content Include="hostel.aspx" />
+    <Content Include="Images\25years_v14.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\cvr_top_view.png" />
+    <Content Include="Images\main62.jpg" />
+    <Content Include="Images\page-bg2.png" />
+    <Content Include="Images\Screenshot 2026-09-08 174756.png" />
+    <Content Include="Images\Screenshot 2026-09-08 182324.png" />
+    <Content Include="Images\Screenshot 2026-09-08 182341.png" />
+    <Content Include="Images\Screenshot 2026-09-08 183733.png" />
+    <Content Include="Images\Screenshot 2026-09-08 220933.png" />
+    <Content Include="Images\Screenshot 2026-09-08 221658.png" />
+    <Content Include="Images\Screenshot 2026-09-08 222107.png" />
+    <Content Include="Images\Screenshot 2026-09-08 224601.png" />
+    <Content Include="Images\Screenshot 2026-09-08 231800.png" />
+    <Content Include="Images\Screenshot 2026-09-08 232004.png" />
+    <Content Include="Images\Screenshot 2026-09-08 233641.png" />
+    <Content Include="Images\Screenshot 2026-09-08 233743.png" />
+    <Content Include="Images\Screenshot 2026-09-08 233847.png" />
+    <Content Include="Images\Screenshot 2026-09-08 233936.png" />
+    <Content Include="Images\Screenshot 2026-09-08 234249.png" />
+    <Content Include="Images\Screenshot 2026-09-08 234534.png" />
+    <Content Include="Images\Screenshot 2026-09-09 000159.png" />
+    <Content Include="Images\Screenshot 2026-09-09 000214.png" />
+    <Content Include="Images\Screenshot 2026-09-09 000622.png" />
+    <Content Include="Images\Screenshot 2026-09-09 000756.png" />
+    <Content Include="Images\Screenshot 2026-09-09 000912.png" />
+    <Content Include="Images\Screenshot 2026-09-09 001611.png" />
+    <Content Include="Images\Screenshot 2026-09-09 001634.png" />
+    <Content Include="Images\Screenshot 2026-09-09 002057.png" />
+    <Content Include="labs.aspx" />
+    <Content Include="leadership.aspx" />
+    <Content Include="library.aspx" />
+    <Content Include="mechanical.aspx" />
+    <Content Include="placements.aspx" />
+    <Content Include="programs.aspx" />
+    <Content Include="pwd.aspx" />
+    <Content Include="research.aspx" />
+    <Content Include="routes.aspx" />
+    <Content Include="sports.aspx" />
+    <Content Include="visionandmission.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aboutcvr.aspx.cs">
+      <DependentUpon>aboutcvr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aboutcvr.aspx.designer.cs">
+      <DependentUpon>aboutcvr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="academiccalander.aspx.cs">
+      <DependentUpon>academiccalander.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="academiccalander.aspx.designer.cs">
+      <DependentUpon>academiccalander.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="address.aspx.cs">
+      <DependentUpon>address.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="address.aspx.designer.cs">
+      <DependentUpon>address.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="campus.aspx.cs">
+      <DependentUpon>campus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="campus.aspx.designer.cs">
+      <DependentUpon>campus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="civil.aspx.cs">
+      <DependentUpon>civil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="civil.aspx.designer.cs">
+      <DependentUpon>civil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="clubs.aspx.cs">
+      <DependentUpon>clubs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="clubs.aspx.designer.cs">
+      <DependentUpon>clubs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cse.aspx.cs">
+      <DependentUpon>cse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cse.aspx.designer.cs">
+      <DependentUpon>cse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cseaiml.aspx.cs">
+      <DependentUpon>cseaiml.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cseaiml.aspx.designer.cs">
+      <DependentUpon>cseaiml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="directions.aspx.cs">
+      <DependentUpon>directions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="directions.aspx.designer.cs">
+      <DependentUpon>directions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ece.aspx.cs">
+      <DependentUpon>ece.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ece.aspx.designer.cs">
+      <DependentUpon>ece.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eee.aspx.cs">
+      <DependentUpon>eee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eee.aspx.designer.cs">
+      <DependentUpon>eee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="examinationbranch.aspx.cs">
+      <DependentUpon>examinationbranch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="examinationbranch.aspx.designer.cs">
+      <DependentUpon>examinationbranch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="governingbody.aspx.cs">
+      <DependentUpon>governingbody.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="governingbody.aspx.designer.cs">
+      <DependentUpon>governingbody.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hostel.aspx.cs">
+      <DependentUpon>hostel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hostel.aspx.designer.cs">
+      <DependentUpon>hostel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="labs.aspx.cs">
+      <DependentUpon>labs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="labs.aspx.designer.cs">
+      <DependentUpon>labs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="leadership.aspx.cs">
+      <DependentUpon>leadership.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="leadership.aspx.designer.cs">
+      <DependentUpon>leadership.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="library.aspx.cs">
+      <DependentUpon>library.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="library.aspx.designer.cs">
+      <DependentUpon>library.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mechanical.aspx.cs">
+      <DependentUpon>mechanical.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mechanical.aspx.designer.cs">
+      <DependentUpon>mechanical.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="placements.aspx.cs">
+      <DependentUpon>placements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="placements.aspx.designer.cs">
+      <DependentUpon>placements.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="programs.aspx.cs">
+      <DependentUpon>programs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="programs.aspx.designer.cs">
+      <DependentUpon>programs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="pwd.aspx.cs">
+      <DependentUpon>pwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pwd.aspx.designer.cs">
+      <DependentUpon>pwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="research.aspx.cs">
+      <DependentUpon>research.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="research.aspx.designer.cs">
+      <DependentUpon>research.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="routes.aspx.cs">
+      <DependentUpon>routes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="routes.aspx.designer.cs">
+      <DependentUpon>routes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="sports.aspx.cs">
+      <DependentUpon>sports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sports.aspx.designer.cs">
+      <DependentUpon>sports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="visionandmission.aspx.cs">
+      <DependentUpon>visionandmission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="visionandmission.aspx.designer.cs">
+      <DependentUpon>visionandmission.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Site.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53279</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44341/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+</Project>

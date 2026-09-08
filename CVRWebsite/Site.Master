@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="CVRWebsite.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style3 {
+            width: 0;
+            height: 0;
+        }
+    </style>
+    <link href="CSS/style.css" rel="stylesheet"/>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:Label ID="lbldate" runat="server" Text="Tuesday, Sep 08, 2026" CssClass="lbldate" Width="81%"></asp:Label>
+        
+        <div style="background-color: #651A14; padding-left: 18%; padding: 12px 19% 0px 19%; display: flex; height: 93px;">
+            <img alt="" src="Images/logo.png" style="height: 85px" id="imgLogo" />
+            <img alt="" src="Images/25years_v14.png" style="width: 50px; height: 50px; margin-left: 285px; margin-top: 7px; margin-bottom: 20px;" id="imgAnniversary"/>
+        </div>
+        <div style="margin-right: 19%; margin-left: 19%; background-color: #651A14; padding-top: 10px; padding-bottom: 10px;">
+
+            <asp:Menu ID="Menu" runat="server" DynamicEnableDefaultPopOutImage="False" DynamicVerticalOffset="5" ForeColor="#E8BEAA" Orientation="Horizontal" StaticEnableDefaultPopOutImage="False" StaticSubMenuIndent="20px">
+                <DynamicHoverStyle ForeColor="White" />
+                <DynamicMenuItemStyle BackColor="#651A14" BorderColor="#651A14" BorderStyle="Solid" BorderWidth="2px" HorizontalPadding="10px" />
+                <DynamicMenuStyle VerticalPadding="0px" />
+                <Items>
+                    <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/home.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="About Us" Value="About Us">
+                        <asp:MenuItem Text="About CVR" Value="About CVR" NavigateUrl="~/aboutcvr.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Vision &amp; Mission" Value="Vision &amp; Mission" NavigateUrl="~/visionandmission.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Leadership" Value="Leadership" NavigateUrl="~/leadership.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Governing Body" Value="Governing Body" NavigateUrl="~/governingbody.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Academics" Value="Academics">
+                        <asp:MenuItem Text="Programs" Value="Programs" NavigateUrl="~/programs.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Academic Calendar" Value="Academic Calendar" NavigateUrl="~/academiccalander.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Syllabuses" Value="Syllabuses" NavigateUrl="https://drive.google.com/drive/folders/1mtrt4HuVYySmg5_Yc1FesYjdNynD5s-t"></asp:MenuItem>
+                        <asp:MenuItem Text="Examination Branch" Value="Examination Branch" NavigateUrl="~/examinationbranch.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Departments" Value="Departments">
+                        <asp:MenuItem Text="CSE" Value="CSE" NavigateUrl="~/cse.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="CSE AI &amp; ML" Value="CSE AI &amp; ML" NavigateUrl="~/cseaiml.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="ECE" Value="ECE" NavigateUrl="~/ece.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="EEE" Value="EEE" NavigateUrl="~/eee.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Mechanical" Value="Mechanical" NavigateUrl="~/mechanical.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Civil" Value="Civil" NavigateUrl="~/civil.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Research" Value="Research" NavigateUrl="~/research.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Infrastructure" Value="Infrastructure">
+                        <asp:MenuItem Text="Campus" Value="Campus" NavigateUrl="~/campus.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Library" Value="Library" NavigateUrl="~/library.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Sports" Value="Sports" NavigateUrl="~/sports.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Hostel" Value="Hostel" NavigateUrl="~/hostel.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Labs" Value="Labs" NavigateUrl="~/labs.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Placements" Value="Placements" NavigateUrl="~/placements.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Alumni" Value="Alumni" NavigateUrl="https://cvr.ac.in/alumni/"></asp:MenuItem>
+                    <asp:MenuItem Text="More" Value="More">
+                        <asp:MenuItem Text="Art &amp; Culture Clubs" Value="Art &amp; Culture Clubs" NavigateUrl="~/clubs.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Persons with Disabilities" Value="Persons with Disabilities" NavigateUrl="~/pwd.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Contact Us" Value="Contact Us">
+                        <asp:MenuItem Text="Address" Value="Address" NavigateUrl="~/address.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Directions" Value="Directions" NavigateUrl="~/directions.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Bus Routes" Value="Bus Routes" NavigateUrl="~/routes.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+                </Items>
+                <StaticHoverStyle ForeColor="White" />
+                <StaticMenuItemStyle HorizontalPadding="15px" />
+            </asp:Menu>
+
+        </div>
+        <main class ="page-container">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </main>
+        </form>
+        <div class="footer" style="margin-right: 19%; margin-left: 19%; background-color: #651A14; color: #E8BEAA; text-align:center;">
+            <p>Copyright © 2026 CVR College of Engineering, All Rights Reserved (Best viewed with Firefox, Chrome, Safari)</p>
+        </div>
+    </body>
+</html>
